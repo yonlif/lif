@@ -1,2 +1,1 @@
-include lif/**/*.*
-include lif/*
+recursive-include lif/ *
