@@ -1,1 +1,1 @@
-from lif.Lif import Lif
+from cython_api import trial_division
