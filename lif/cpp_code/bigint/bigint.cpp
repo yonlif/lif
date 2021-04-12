@@ -64,6 +64,12 @@ struct bigint {
         return a;
     }
 
+//    bigint& operator++()
+//    {
+//        *this += 1;
+//        return *this;
+//    }
+
     bigint &operator-=(const bigint &other) {
         if (sign == other.sign) {
             if ((sign == 1 && *this >= other) || (sign == -1 && *this <= other)) {
@@ -88,6 +94,12 @@ struct bigint {
         a -= b;
         return a;
     }
+
+//    bigint& operator--()
+//    {
+//        *this -= 1;
+//        return *this;
+//    }
 
     bigint &operator*=(int v) {
         if (v < 0)

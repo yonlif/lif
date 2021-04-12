@@ -1,4 +1,4 @@
-#include "trail_division_algorithm.hpp"
+#include "trial_division_algorithm.hpp"
 
 
 std::vector<bigint> trial_division(bigint n)
@@ -12,7 +12,7 @@ std::vector<bigint> trial_division(bigint n)
     bigint ac = 9, temp = 16;
     do {
         ac += temp; // Assume addition does not cause overflow with U type
-        if (ac * ac > n) break;
+        if (ac > n) break;
         if (n % f == 0) {
             v.push_back(f);
             n /= f;

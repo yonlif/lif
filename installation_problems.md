@@ -10,7 +10,7 @@ error: command 'g++' failed with exit status 1
 The proper fix to that is simply run before pip installing the following command:
 
 ```bash
-export CFLAGS=-stdlib=libc++
+export CFLAGS="-std=c++11 -stdlib=libc++"
 ```
 
 Than reinstall lif.

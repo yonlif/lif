@@ -17,3 +17,12 @@ std::vector<std::string> cpp_trial_division(char * n) {
     std::vector<bigint> bigint_vector = trial_division(bigint_input);
     return cast_bigint_vector_to_string_vector(bigint_vector);
 }
+
+
+std::string cpp_pollards_rho(char * n) {
+    bigint bigint_input = bigint(n);
+    bigint bigint_result = pollards_rho(bigint_input);
+    std::stringstream tmp_stream;
+    tmp_stream << bigint_result;
+    return tmp_stream.str();
+}
